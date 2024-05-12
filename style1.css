@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    background-image: url('accueil.jpeg');
+    margin: 0; /* Supprime les marges par défaut du body */
+    padding: 0; /* Supprime les rembourrages par défaut du body */
+}
+
+.container {
+    width: 100%; /* Utilise toute la largeur de l'écran */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #f0f2f5;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3131b1;
+    color: #fff;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.profil-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn-modifier,
+.btn-supprimer {
+    background-color: #86a0ec;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-modifier:hover,
+.btn-supprimer:hover {
+    background-color: #6c86c4;
+}

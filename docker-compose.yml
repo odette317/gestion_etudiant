@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Web.Dockerfile
+    ports:
+      - 8086:80
+    depends_on:
+      - mysql
+
+  mysql:
+    build:
+     context: .
+     dockerfile: db.Dockerfile
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gestion_etudiant
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+     mysql_data :   
+#docker build -t nom -f nomdocfile .
+
+#docker run --name nomcon -d nomimage
+
+#docker run --name nomcon -d -p 1234:80
